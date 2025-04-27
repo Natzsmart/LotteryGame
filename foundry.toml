@@ -3,4 +3,10 @@ src = "src"
 out = "out"
 libs = ["lib"]
 
+
+sender = "0xaD952948e79CE74FbD95ea4f1c024Bba5a603A55"
+
+# Add RPC URL (Lisk Sepolia)
+rpc_url = "https://rpc.sepolia-api.lisk.com"
+
 # See more config options https://github.com/foundry-rs/foundry/blob/master/crates/config/README.md#all-options
