@@ -41,48 +41,49 @@ forge test -vvv
 
 ## 🧩 How the Game Works
 
-Players must stake exactly 0.02 ETH to register.
+* Players must stake exactly 0.02 ETH to register.
 
-Each player gets up to 2 guesses.
+* Each player gets up to 2 guesses.
 
-Guess a number between 1 and 9.
+* Guess a number between 1 and 9.
 
-Correct guessers are added to the winners list.
+* Correct guessers are added to the winners list.
 
-After all guesses, prizes are distributed equally among winners.
+* After all guesses, prizes are distributed equally among winners.
 
-After prize distribution, the game resets for a new round.
+* After prize distribution, the game resets for a new round.
 
-You can view previous winners.
+* You can view previous winners.
 
 
 ## 🚀 Deployment (Optional)
 ```bash
-forge script script/LotteryGame.s.sol --fork-url http://localhost:8545 --broadcast
+forge create script/LotteryGame.s.sol --fork-url http://localhost:8545 --broadcast
 ```
 Replace localhost with your testnet RPC if needed.
 
-![Contract deployed](image.png)
+![Lottery Game Logo](pics/image.png)
+
 
 
 
 ## ⚠️ Important Notes
 
-The randomness uses block variables (timestamp, prevrandao) — not secure for production.
+* The randomness uses block variables (timestamp, prevrandao) — not secure for production.
 
-For production apps, consider using Chainlink VRF for verifiable randomness.
+* For production apps, consider using Chainlink VRF for verifiable randomness.
 
-Validate all assumptions about gas usage, replay protection, and security if upgrading for mainnet.
+* Validate all assumptions about gas usage, replay protection, and security if upgrading for mainnet.
 
 
 ## 📜 License
-This project is licensed under the MIT License.
+* This project is licensed under the MIT License.
 
 ## 🙌 Acknowledgements
 
-Built with Foundry
+* Built with Foundry
 
-Created by SmartCodez ✨
+* Created by [SmartCodez](https://github.com/Natzsmart)✨
 
-Inspired by Solidity & blockchain learning projects.
+* Inspired by Solidity & blockchain learning projects.
 
