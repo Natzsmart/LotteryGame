@@ -4,7 +4,9 @@ pragma solidity ^0.8.17;
 import "forge-std/Test.sol";
 import "../src/LotteryGame.sol"; // ✅ correct import
 
-contract LotteryGameTest is Test { // ✅ renamed to LotteryGameTest
+contract LotteryGameTest is
+    Test // ✅ renamed to LotteryGameTest
+{
     LotteryGame public game; // ✅ using correct contract
     address public owner;
     address public player1;
